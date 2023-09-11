@@ -76,7 +76,7 @@ public class Capture extends CordovaPlugin {
     private static final int CAPTURE_NOT_SUPPORTED = 20;
 
     private static String[] storagePermissions;
-    static {
+    /*static {
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             storagePermissions = new String[]{
             };
@@ -86,7 +86,7 @@ public class Capture extends CordovaPlugin {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE
             };
         }
-    }
+    }*/
 
     private boolean cameraPermissionInManifest;     // Whether or not the CAMERA permission is declared in AndroidManifest.xml
 
